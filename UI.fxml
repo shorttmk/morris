@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+     Defines the view in fxml
+     Created using JavaFX Scene Builder
+-->
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="500" maxWidth="450.0" minHeight="550.0" minWidth="450.0" prefHeight="500" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2aa4.morris.Controller">
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9f0cf" height="320.0" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+            <Line endX="320.0" />
+            <Line endY="320.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9f0cf" height="160.0" stroke="BLACK" strokeType="INSIDE" width="160.0" />
+            <GridPane maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Circle fx:id="nONW" onMouseClicked="#processNodeClick" radius="8.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nON" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nONE" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      
+                  <Circle fx:id="nINW" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nIN" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nINE" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      
+                  <Circle fx:id="nOW" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nIW" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      
+                  <Circle fx:id="nIE" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nOE" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      
+                  <Circle fx:id="nISW" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nIS" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nISE" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+
+                  <Circle fx:id="nOSW" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nOS" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Circle fx:id="nOSE" onMouseClicked="#processNodeClick" radius="8.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+   </center>
+   <left>
+       <VBox alignment="CENTER" prefWidth="50.0" spacing="20.0" BorderPane.alignment="CENTER">
+           <Circle fx:id="iR0" fill="RED" onMouseClicked="#processNodeClick" radius="10.0" />
+           <Circle fx:id="iR1" fill="RED" onMouseClicked="#processNodeClick" radius="10.0" />
+           <Circle fx:id="iR2" fill="RED" onMouseClicked="#processNodeClick" radius="10.0" />
+           <Circle fx:id="iR3" fill="RED" onMouseClicked="#processNodeClick" radius="10.0" />
+           <Circle fx:id="iR4" fill="RED" onMouseClicked="#processNodeClick" radius="10.0" />
+           <Circle fx:id="iR5" fill="RED" onMouseClicked="#processNodeClick" radius="10.0" />
+       </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" prefWidth="50.0" spacing="20.0" BorderPane.alignment="CENTER">
+          <Circle fx:id="iB0" fill="BLUE" onMouseClicked="#processNodeClick" radius="10.0" />
+          <Circle fx:id="iB1" fill="BLUE" onMouseClicked="#processNodeClick" radius="10.0" />
+          <Circle fx:id="iB2" fill="BLUE" onMouseClicked="#processNodeClick" radius="10.0" />
+          <Circle fx:id="iB3" fill="BLUE" onMouseClicked="#processNodeClick" radius="10.0" />
+          <Circle fx:id="iB4" fill="BLUE" onMouseClicked="#processNodeClick" radius="10.0" />
+          <Circle fx:id="iB5" fill="BLUE" onMouseClicked="#processNodeClick" radius="10.0" />
+      </VBox>
+   </right>
+   <top>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Six Men’s Morris" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="162.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="288.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fx:id="msgLabelL" strokeType="OUTSIDE" strokeWidth="0.0" text="" GridPane.halignment="LEFT">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="32.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text fx:id="msgLabelR" strokeType="OUTSIDE" strokeWidth="0.0" text="" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefWidth="100.0">
+               <children>
+                  <Button fx:id="newBut" mnemonicParsing="false" onAction="#processNewGame" prefHeight="64.0" prefWidth="100.0" text="New" textAlignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </VBox>
+            <VBox prefWidth="100.0" spacing="8.0">
+               <children>
+                  <Button fx:id="loadBut" mnemonicParsing="false" onAction="#processLoad" prefWidth="100.0" text="Load" textAlignment="CENTER" />
+                  <Button fx:id="saveBut" mnemonicParsing="false" onAction="#processSave" prefWidth="100.0" text="Save" textAlignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="spacer_unused" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#processNewGame" prefHeight="64.0" prefWidth="100.0" textAlignment="CENTER" visible="false" />
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </VBox>
+            <VBox prefWidth="100.0">
+               <children>
+                  <Button fx:id="restoreBut" mnemonicParsing="false" onAction="#processRestore" prefHeight="64.0" prefWidth="100.0" text="Restore" textAlignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </VBox>
+            <VBox prefWidth="100.0">
+               <children>
+                  <!--<Button minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="Restore" textAlignment="CENTER" onAction="#processRestore" />-->
+                  <Button fx:id="endTurnBut" mnemonicParsing="false" onAction="#processEndTurn" prefHeight="64.0" prefWidth="100.0" text="End" textAlignment="CENTER" />
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>
